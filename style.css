@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: #c5e4e7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+  grid-gap: 30px;
+  height: 100vh;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px 30px 0 0;
+  max-width: 375px;
+  margin: auto;
+}
+
+body main section h2 {
+  color: #5e7a7d;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+body main section fieldset {
+  position: relative;
+}
+
+body main section fieldset img {
+  width: 15px;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body main section input {
+  width: 100%;
+  font-size: 24px;
+  color: #00494d;
+  background-color: #f4fafa;
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: right;
+  padding: 10px 15px;
+  padding-left: 50px;
+}
+
+body main section input::-webkit-inner-spin-button, body main section input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+body main section input:focus {
+  outline: 2px solid #26c0ab;
+}
+
+body main section #tip-title {
+  margin-bottom: 15px;
+}
+
+body main section .tip-buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+body main section .tip-buttons button {
+  color: white;
+  background-color: #00494d;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+body main section .tip-buttons button:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+
+body main section .tip-buttons input {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+body main section .tip-buttons input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+body main section .tip-buttons input:-ms-input-placeholder {
+  text-align: center;
+}
+
+body main section .tip-buttons input::-ms-input-placeholder {
+  text-align: center;
+}
+
+body main section .tip-buttons input::placeholder {
+  text-align: center;
+}
+
+body main section .tip-buttons input:focus {
+  text-align: right;
+}
+
+body main #calc_inputs {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+body main #board {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  background-color: #00494d;
+  border-radius: 10px;
+  padding: 20px;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+body main #board .result {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 40px;
+}
+
+body main #board .board-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #board .board-row h3 {
+  color: white;
+  text-transform: capitalize;
+}
+
+body main #board .board-row h4 {
+  color: #c5e4e7;
+}
+
+body main #board .board-row p {
+  color: #26c0ab;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+body main #board button {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #26c0ab;
+  color: #00494d;
+  border-radius: 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body main #board button:hover {
+  background-color: #c5e4e7;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    padding: 50px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  body header {
+    padding: 0px;
+  }
+  body main {
+    border-radius: 30px;
+    padding: 40px;
+    max-width: 900px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+  }
+  body main #calc_inputs {
+    grid-gap: 40px;
+  }
+  body main #board {
+    grid-column: 2 / end;
+    padding: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

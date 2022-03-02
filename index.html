@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        grid-column: 1 / end;
+        font-size: 15px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="logo" />
+    </header>
+
+    <main>
+      <div class="" id="calc_inputs">
+        <!-- BILL -->
+        <section>
+          <h2>Bill</h2>
+          <fieldset>
+            <img src="./images/icon-dollar.svg" alt="dollar icon" />
+            <input
+              type="number"
+              name="bill"
+              id="bill"
+              class="inputs"
+              placeholder="0"
+            />
+          </fieldset>
+        </section>
+
+        <!-- SELECT TIP -->
+        <section>
+          <h2 id="tip-title">select tip %</h2>
+          <div class="tip-buttons">
+            <button onclick="clickTip(5)" class="tip_btn">5%</button>
+            <button onclick="clickTip(10)" class="tip_btn">10%</button>
+            <button onclick="clickTip(15)" class="tip_btn">15%</button>
+            <button onclick="clickTip(25)" class="tip_btn">25%</button>
+            <button onclick="clickTip(50)" class="tip_btn">50%</button>
+            <input
+              type="number"
+              id="custom"
+              class="inputs"
+              placeholder="CUSTOM"
+            />
+          </div>
+        </section>
+
+        <!-- NUMBER OF PEOPLE -->
+        <section>
+          <h2>number of people</h2>
+          <fieldset>
+            <img src="./images/icon-person.svg" alt="person icon" />
+            <input type="number" id="people" class="inputs" placeholder="0" />
+          </fieldset>
+        </section>
+      </div>
+
+      <!-- BOARD -->
+      <section id="board">
+        <div class="result">
+          <div class="board-row">
+            <div>
+              <h3>tip amount</h3>
+              <h4>/ person</h4>
+            </div>
+            <p>$<span id="showTipAmount">0.00</span></p>
+          </div>
+          <div class="board-row">
+            <div>
+              <h3>total</h3>
+              <h4>/ person</h4>
+            </div>
+            <p>$0.00</p>
+          </div>
+        </div>
+        <button id="reset">reset</button>
+      </section>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/DevSenpai09"
+          target="_blank"
+          >DevSenpai</a
+        >.
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
