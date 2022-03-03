@@ -80,6 +80,10 @@ body main section input:focus {
   outline: 2px solid #26c0ab;
 }
 
+body main section input:hover {
+  outline: 2px solid #26c0ab;
+}
+
 body main section #tip-title {
   margin-bottom: 15px;
 }
@@ -133,6 +137,23 @@ body main section .tip-buttons input:focus {
   text-align: right;
 }
 
+body main section .people_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body main section .people_label p {
+  display: none;
+  color: #e55151;
+}
+
 body main #calc_inputs {
   display: -ms-grid;
   display: grid;
@@ -150,7 +171,7 @@ body main #board {
       align-content: space-between;
 }
 
-body main #board .result {
+body main #board .results {
   display: -ms-grid;
   display: grid;
   grid-gap: 40px;
@@ -194,6 +215,7 @@ body main #board button {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  opacity: 0.3;
 }
 
 body main #board button:hover {

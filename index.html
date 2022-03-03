@@ -54,11 +54,11 @@
         <section>
           <h2 id="tip-title">select tip %</h2>
           <div class="tip-buttons">
-            <button onclick="clickTip(5)" class="tip_btn">5%</button>
-            <button onclick="clickTip(10)" class="tip_btn">10%</button>
-            <button onclick="clickTip(15)" class="tip_btn">15%</button>
-            <button onclick="clickTip(25)" class="tip_btn">25%</button>
-            <button onclick="clickTip(50)" class="tip_btn">50%</button>
+            <button onclick="clickTip(5, 0)" class="tip_btn">5%</button>
+            <button onclick="clickTip(10, 1)" class="tip_btn">10%</button>
+            <button onclick="clickTip(15, 2)" class="tip_btn">15%</button>
+            <button onclick="clickTip(25, 3)" class="tip_btn">25%</button>
+            <button onclick="clickTip(50, 4)" class="tip_btn">50%</button>
             <input
               type="number"
               id="custom"
@@ -70,7 +70,10 @@
 
         <!-- NUMBER OF PEOPLE -->
         <section>
-          <h2>number of people</h2>
+          <div class="people_label">
+            <h2>number of people</h2>
+            <p id="warning">Can't be Zero</p>
+          </div>
           <fieldset>
             <img src="./images/icon-person.svg" alt="person icon" />
             <input type="number" id="people" class="inputs" placeholder="0" />
@@ -80,20 +83,20 @@
 
       <!-- BOARD -->
       <section id="board">
-        <div class="result">
+        <div class="results">
           <div class="board-row">
             <div>
               <h3>tip amount</h3>
               <h4>/ person</h4>
             </div>
-            <p>$<span id="showTipAmount">0.00</span></p>
+            <p>$<span class="showAmount">0.00</span></p>
           </div>
           <div class="board-row">
             <div>
               <h3>total</h3>
               <h4>/ person</h4>
             </div>
-            <p>$0.00</p>
+            <p>$<span class="showAmount">0.00</span></p>
           </div>
         </div>
         <button id="reset">reset</button>

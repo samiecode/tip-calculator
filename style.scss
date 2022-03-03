@@ -81,6 +81,10 @@ body {
         &:focus {
           outline: 2px solid $strongCyan;
         }
+
+        &:hover {
+          outline: 2px solid $strongCyan;
+        }
       }
 
       #tip-title {
@@ -121,6 +125,17 @@ body {
           }
         }
       }
+
+      .people_label {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        p {
+          display: none;
+          color: #e55151;
+        }
+      }
     }
 
     #calc_inputs {
@@ -136,7 +151,7 @@ body {
       padding: 20px;
       align-content: space-between;
 
-      .result {
+      .results {
         display: grid;
         grid-gap: 40px;
       }
@@ -170,6 +185,7 @@ body {
         color: $veryDarkCyan;
         border-radius: 5px;
         height: fit-content;
+        opacity: 0.3;
 
         &:hover {
           background-color: $LightGrayishCyan1;
